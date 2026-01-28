@@ -27,7 +27,7 @@ main section {
         transform: translateY(0);
     }
 }
-
+ 
 /* HERO */
 .hero {
     background: #000;
@@ -656,6 +656,63 @@ main section {
     margin-top: 18px;
     font-size: 0.85rem;
     color: #aaaaaa;
+}
+/* ===== MOCKUPS ===== */
+.mockups {
+    background-color: #f6f6f6;
+    padding: 80px 20px;
+}
+
+.mockups-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.mockups h2 {
+    font-size: 2.1rem;
+    margin-bottom: 25px;
+    color: #000;
+    position: relative;
+}
+
+.mockups h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    display: block;
+    margin-top: 10px;
+}
+
+.mockups p {
+    font-size: 1.05rem;
+    color: #333;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.mockups-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.mockups-grid img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+}
+
+.mockups-grid img:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mockups-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* RESPONSIVE */
