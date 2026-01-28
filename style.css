@@ -1,0 +1,755 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #ffffff;
+    color: #111;
+    line-height: 1.6;
+}
+main section {
+    scroll-margin-top: 80px;
+}
+.hero-content {
+    animation: heroFade 1.2s ease forwards;
+}
+
+@keyframes heroFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* HERO */
+.hero {
+    background: #000;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* INTRODUCCIÓN */
+.intro {
+    background-color: #ffffff;
+    padding: 80px 20px;
+}
+
+.intro-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro h2 {
+    font-size: 2.1rem;
+    margin-bottom: 25px;
+    color: #000;
+    position: relative;
+}
+
+/* línea sutil debajo del título */
+.intro h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    display: block;
+    margin-top: 10px;
+}
+
+.intro p {
+    font-size: 1.05rem;
+    color: #333;
+    margin-bottom: 18px;
+    line-height: 1.8;
+}
+
+/* resaltado sutil */
+.highlight-text {
+    background: linear-gradient(transparent 60%, #e5e5e5 60%);
+    padding: 0 4px;
+}
+/* SITUACIÓN ACTUAL Y OPORTUNIDAD */
+.situation {
+    background-color: #f5f5f5;
+    padding: 80px 20px;
+}
+
+.situation-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.situation h2 {
+    font-size: 2.1rem;
+    margin-bottom: 30px;
+    color: #000;
+    position: relative;
+}
+
+/* detalle visual */
+.situation h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    display: block;
+    margin-top: 10px;
+}
+
+.situation-content p {
+    font-size: 1.05rem;
+    color: #333;
+    margin-bottom: 18px;
+    line-height: 1.8;
+}
+
+/* bloque destacado final */
+.situation-highlight {
+    background-color: #ffffff;
+    border-left: 5px solid #000;
+    padding: 20px 25px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+/* OBJETIVO DEL TRABAJO */
+.objective {
+    background-color: #ffffff;
+    padding: 80px 20px;
+}
+
+.objective-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.objective h2 {
+    font-size: 2.1rem;
+    margin-bottom: 25px;
+    color: #000;
+    position: relative;
+}
+
+.objective h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.objective-intro {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* FLUJO */
+.objective-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.flow-item {
+    background: #f8f8f8;
+    padding: 30px 25px;
+    border-radius: 14px;
+    width: 280px;
+    position: relative;
+}
+
+.flow-step {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+.flow-item h3 {
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.flow-item p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* FLECHAS */
+.flow-arrow {
+    font-size: 2rem;
+    color: #000;
+    font-weight: bold;
+}
+
+/* CIERRE */
+.objective-closing {
+    margin-top: 50px;
+    font-size: 1.05rem;
+    color: #222;
+}
+/* ESTRATEGIA DE CONTENIDO */
+.strategy {
+    background: #ffffff;
+    padding: 80px 20px;
+}
+
+.strategy-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.strategy h2 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+    color: #000;
+    position: relative;
+}
+
+.strategy h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.strategy-intro {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* GRID */
+.strategy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.strategy-card {
+    background: #f8f8f8;
+    padding: 35px 25px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.strategy-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.strategy-icon {
+    font-size: 2.2rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.strategy-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.strategy-card p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* CIERRE */
+.strategy-closing {
+    margin-top: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.05rem;
+    color: #222;
+}
+/* ENFOQUE DE LA COMUNICACIÓN */
+.approach {
+    background-color: #f6f6f6;
+    padding: 80px 20px;
+}
+
+.approach-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.approach h2 {
+    font-size: 2.1rem;
+    margin-bottom: 25px;
+    color: #000;
+    position: relative;
+}
+
+.approach h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.approach-main {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+    color: #222;
+    line-height: 1.8;
+}
+
+/* ÍTEMS */
+.approach-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.approach-item {
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 16px;
+}
+
+.approach-icon {
+    font-size: 2.2rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.approach-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.approach-item p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* CIERRES */
+.approach-closing {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    font-size: 1.05rem;
+    color: #333;
+}
+
+.approach-tone {
+    font-size: 1rem;
+    color: #111;
+    font-weight: 500;
+}
+/* FORMATO DEL CONTENIDO */
+.format {
+    background-color: #f6f6f6;
+    padding: 80px 20px;
+}
+
+.format-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.format h2 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+    color: #000;
+    position: relative;
+}
+
+.format h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.format-intro {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* CARDS */
+.format-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.format-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.format-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+}
+
+.format-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 18px;
+}
+
+.format-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+}
+
+.format-card p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* CIERRE */
+.format-closing {
+    margin-top: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.05rem;
+    color: #222;
+}
+.plan-trabajo {
+  padding: 60px 20px;
+  background: white;
+}
+
+.plan-trabajo h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.plan-trabajo .intro {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+}
+
+.card ul {
+  padding-left: 18px;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+  color: #444;
+  line-height: 1.4;
+}
+
+.card.destacado {
+  border-left: 5px solid #2a84c0;
+}
+
+.card .nota {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: #666;
+}
+.propuesta-economica {
+  padding: 60px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.propuesta-economica h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.precio-box {
+  max-width: 500px;
+  margin: 0 auto 30px;
+  padding: 30px 20px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #2a84c0, #1f6fa3);
+  color: #ffffff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.precio-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 6px;
+}
+
+.precio {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.precio-aclaracion {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.factores {
+  max-width: 500px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+
+.factores h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.factores ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.factores ul li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.flexible {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: #555;
+}
+.footer {
+    background-color: #0f0f0f;
+    color: #ffffff;
+    padding: 50px 20px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-name {
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.footer-name span {
+    font-weight: 300;
+    color: #cccccc;
+}
+
+.footer-links {
+    margin: 18px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    position: relative;
+}
+
+.footer-links a::after {
+    content: "";
+    width: 0%;
+    height: 1px;
+    background: #ffffff;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after {
+    width: 100%;
+}
+
+.footer-links .portfolio {
+    font-weight: 500;
+}
+
+.footer-invite {
+    margin-top: 18px;
+    font-size: 0.85rem;
+    color: #aaaaaa;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .format {
+        padding: 60px 16px;
+    }
+
+    .format h2 {
+        font-size: 1.7rem;
+    }
+
+    .format-icon {
+        font-size: 2.2rem;
+    }
+        .approach {
+        padding: 60px 16px;
+    }
+
+    .approach h2 {
+        font-size: 1.7rem;
+    }
+
+    .approach-main {
+        font-size: 1.05rem;
+    }
+        .strategy {
+        padding: 60px 16px;
+    }
+
+    .strategy h2 {
+        font-size: 1.7rem;
+    }
+
+    .strategy-icon {
+        font-size: 2rem;
+    }
+        .flow-arrow {
+        display: none;
+    }
+
+    .objective-flow {
+        gap: 25px;
+    }
+        .situation {
+        padding: 60px 16px;
+    }
+
+    .situation h2 {
+        font-size: 1.7rem;
+    }
+
+    .situation-content p {
+        font-size: 1rem;
+    }
+
+    .situation-highlight {
+        padding: 18px 20px;
+    }
+        .intro {
+        padding: 60px 16px;
+    }
+
+    .intro h2 {
+        font-size: 1.7rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+        .hero h1 {
+        font-size: 2rem;
+    }
+
+    .section h2 {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* FOOTER */
+.footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
